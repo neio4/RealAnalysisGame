@@ -1,6 +1,6 @@
 import GameServer
 
---import Game.CustomTactic.Rw  -- weaker `rw` which behaves like Lean's `rewrite` tactic (i.e. uses no `rfl`)
+import Game.CustomTactic.Rw  -- weaker `rw` which behaves like Lean's `rewrite` tactic (i.e. uses no `rfl`)
 import Game.CustomTactic.Linarith -- modified `linarith` tactic
 
 import Mathlib.Data.Real.Basic
