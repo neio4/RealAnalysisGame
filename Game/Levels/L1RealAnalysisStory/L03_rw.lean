@@ -29,13 +29,17 @@ Try it out!
 /-- The `rewrite` tactic replaces the left-hand side of an equality with the right-hand side in the goal. The syntax is `rewrite [hypothesis_name1, hypothesis_name2, etc]`.  -/
 TacticDoc rewrite
 
+/-- The `rw` tactic replaces the left-hand side of an equality with the right-hand side in the goal. The syntax is `rw [hypothesis_name1, hypothesis_name2, etc]`.  -/
+TacticDoc rw
+
+
 /-- If we know that $x = 2$, then we can prove that $x + y = 2 + y$. -/
 Statement (x y : ℝ) (Bob : x = 2) : x + y = 2 + y := by
   Hint (hidden := true) "Type `rewrite [Bob]` to replace `x` with `2` in the goal. Then what?"
   rewrite [Bob]
   rfl
 
-NewTactic rewrite
+NewTactic rewrite rw
 
 Conclusion "
 Great! You've learned the `rewrite` tactic.

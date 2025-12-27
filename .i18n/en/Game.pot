@@ -72,6 +72,10 @@ msgstr ""
 msgid "You can't use `abs_mul` just yet, because you don't have a product of things inside the absolute values! So first factor out the 2: `have factor : 2 * a n - 2 * L = 2 * (a n - L) := by ring_nf`"
 msgstr ""
 
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "Sum of Evens"
+msgstr ""
+
 #: Game
 msgid "Learn real analysis through the historical crises that forced mathematicians to rebuild calculus from the ground up in the 19th century."
 msgstr ""
@@ -248,12 +252,12 @@ msgid "Beautiful! That was remarkably simple for such a powerful theorem.\n"
 "**Exercise:** Prove that if a sequence has two subsequences converging to different limits, then the sequence diverges. (Hint: use proof by contradiction—assume the sequence converges and derive that the two limits must be equal.)"
 msgstr ""
 
-#: Game.Levels.L10Pset.L10Pset7
-msgid "Problem 6"
-msgstr ""
-
 #: Game.Levels.L13Levels.L03_MonotoneSubseq
 msgid "Monotone Subsequence"
+msgstr ""
+
+#: Game.Levels.L10Pset.L10Pset7
+msgid "Problem 6"
 msgstr ""
 
 #: Game.Levels.L3Levels.L02_OneOverN
@@ -607,12 +611,12 @@ msgid "`(f : ℕ → ℝ → ℝ) (F : ℝ → ℝ) :=\n"
 "The sequence `f : ℕ → ℝ → ℝ` of functions converges uniformly to `F : ℝ → ℝ`."
 msgstr ""
 
-#: Game.Levels.L1RealAnalysisStory.L09_big_boss
-msgid "**BIG BOSS LEVEL**: This problem requires all the tactics you've learned!"
-msgstr ""
-
 #: Game.Levels.L2NewtonsCalculationOfPi
 msgid "Lecture 2: Newton's Computation of π"
+msgstr ""
+
+#: Game.Levels.L1RealAnalysisStory.L09_big_boss
+msgid "**BIG BOSS LEVEL**: This problem requires all the tactics you've learned!"
 msgstr ""
 
 #: Game.Levels.L8Pset.L8Pset1
@@ -715,6 +719,10 @@ msgstr ""
 msgid "If a sequence `a : ℕ → ℝ` has two convergent subsequences, `a ∘ σ` converges to `L` and `a ∘ τ` converges to `M ≠ L`, then `a` is not convergent."
 msgstr ""
 
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "Given that `g (u) = u^2 + 2 * u` for all `u`, prove that there exists some `a` such that `g (3) = a`."
+msgstr ""
+
 #: Game.Levels.L18Levels.L02
 msgid "If `a` decreases to `0`, then the alternating series `Series (fun n ↦ (-1)^n * a n)` converges."
 msgstr ""
@@ -754,6 +762,10 @@ msgstr ""
 
 #: Game.Levels.L3Levels.L02_OneOverN
 msgid "Clear denominators in the goal: `field_simp`"
+msgstr ""
+
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "Given that `h (x) = 4 * x - 2` for all `x`, prove that there exists some `x` such that `h (x) = 10`."
 msgstr ""
 
 #: Game.Levels.L18Levels.L02
@@ -1069,6 +1081,11 @@ msgid "# Congratulations!\n"
 "This is real analysis at its finest—unexpected, profound, and ultimately satisfying. Well done!"
 msgstr ""
 
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "Done.\n"
+"Note: If you were wondering, `ring_nf` knows that `2 * I + I` is `3 * I`."
+msgstr ""
+
 #: Game.Levels.L4PsetIntro
 msgid "Pset 4"
 msgstr ""
@@ -1304,6 +1321,7 @@ msgid "# Level 1 **Big Boss:**  Bolzano-Weierstrass\n"
 msgstr ""
 
 #: Game.Levels.L1Pset.L1Pset2
+#: Game.Levels.L1ExtraPset.L1ExtraPset
 #: Game.Levels.L2Pset.L2Pset2
 #: Game.Levels.L3Pset.L3Pset2
 #: Game.Levels.L6Pset.L6Pset2
@@ -1683,6 +1701,14 @@ msgid "If a sequence `a : ℕ → ℚ` is Cauchy, then it converges (that is, `S
 "to the real number defined in `Real_of_CauSeq`."
 msgstr ""
 
+#: Game.Levels.L13Pset.L13Pset1
+msgid "# Problem 1:\n"
+"\n"
+"Prove `AntitoneSubseq_of_UnBddPeaks`\n"
+"\n"
+"## New theorem: `Antitone_of_succ`"
+msgstr ""
+
 #: Game.Levels.L3Pset.L3Pset4
 msgid "Usage: given hypothesis `h : 0 ≤ X`, you can prove: `have : |X| = X := by apply abs_of_nonneg h`"
 msgstr ""
@@ -1690,14 +1716,6 @@ msgstr ""
 #: Game.Levels.L6Levels.L06_Squeeze
 msgid "If `a c : ℕ → ℝ`, with `a` and `c` both converging to `L`,\n"
 "and `b` is another sequence, squeezed between `a` and `c`, then `b` also converges to `L`."
-msgstr ""
-
-#: Game.Levels.L13Pset.L13Pset1
-msgid "# Problem 1:\n"
-"\n"
-"Prove `AntitoneSubseq_of_UnBddPeaks`\n"
-"\n"
-"## New theorem: `Antitone_of_succ`"
 msgstr ""
 
 #: Game.Levels.L3Levels.L02_OneOverN
@@ -2648,11 +2666,6 @@ msgstr ""
 msgid "Big Boss: The Ultimate Tactic Challenge"
 msgstr ""
 
-#: Game.Levels.L6Levels.L00_SumOfSeqs
-msgid "For two sequences `a b : ℕ → ℝ` and real numbers `L M : ℝ`, with the hypotheses that `SeqLim a L` and `SeqLim b M`, the theorem `SumLim` says that if\n"
-"there is a third sequence `c : ℕ → ℝ` so that for all `n`, `c n = a n + b n` (that is, `c` is the sum of the sequences), then `SeqLim c (L + M)` holds."
-msgstr ""
-
 #: Game.Levels.L1Pset.L1Pset4
 msgid "# Problem 4\n"
 "\n"
@@ -2680,6 +2693,15 @@ msgid "# Problem 4\n"
 " exactly what was claimed in the `have` statement.\n"
 "\n"
 "Now you should be able to solve this problem."
+msgstr ""
+
+#: Game.Levels.L6Levels.L00_SumOfSeqs
+msgid "For two sequences `a b : ℕ → ℝ` and real numbers `L M : ℝ`, with the hypotheses that `SeqLim a L` and `SeqLim b M`, the theorem `SumLim` says that if\n"
+"there is a third sequence `c : ℕ → ℝ` so that for all `n`, `c n = a n + b n` (that is, `c` is the sum of the sequences), then `SeqLim c (L + M)` holds."
+msgstr ""
+
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "Given that `k (x) = 3 * x + 1` for all `x`, prove that there exists some `x` such that `k (x) = 16`."
 msgstr ""
 
 #: GameServer.RpcHandlers
@@ -3050,6 +3072,10 @@ msgid "# Level 1: Monotonicity of Series\n"
 "If `0 ≤ a n`, then `Series a` is Monotone."
 msgstr ""
 
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "Let $a$ and $b$ be integers. If $a$ is even and $b$ is even, then $a+b$ is even."
+msgstr ""
+
 #: Game.Levels.L13Lecture
 msgid "# Lecture 13: Monotone Subsequence"
 msgstr ""
@@ -3303,6 +3329,31 @@ msgid "# Level 1: Uniqueness of Limits\n"
 "\n"
 "The algebra in step 5 is the key: we write `L - M = (L - a(N)) + (a(N) - M)` and apply\n"
 "the triangle inequality to get the impossible conclusion."
+msgstr ""
+
+#: Game.Levels.L2Pset.L2Pset1
+msgid "# Problem 1\n"
+"\n"
+"We found in Lecture 2 that Newton's Binomial Theorem gave the expansion\n"
+"\n"
+"$\n"
+"\\sqrt{1+x}\\approx\n"
+"1\n"
+"+\\frac{1}{2}x\n"
+"-\\frac{1}{8}x^2\n"
+"+\\frac{1}{16}x^3\n"
+"-\\frac{5 x^4}{128}+\\cdots\n"
+"$\n"
+"\n"
+"to fourth order.\n"
+"Work out the next term in the expansion. This will be a constant `c` with the property that the polynomial\n"
+"\n"
+"$\\left(1  +\\frac{1}{2}x\n"
+"-\\frac{1}{8}x^2\n"
+"+\\frac{1}{16}x^3\n"
+"-\\frac{5 x^4}{128} + c \\cdot x^5 \\right)^2 - (1 + x)$\n"
+"\n"
+"only has terms $x ^ 6$ or higher. (We don't *yet* have a way of saying that in Lean, so I have to give you the expansion explicitly.)"
 msgstr ""
 
 #: Game.Levels.L2NewtonsCalculationOfPi
@@ -3611,31 +3662,6 @@ msgid "# The Mathematical Revolution of 1666\n"
 "**SIMPLICIO:** Ok, ok; you've convinced me! On with some actual Real Analysis please."
 msgstr ""
 
-#: Game.Levels.L2Pset.L2Pset1
-msgid "# Problem 1\n"
-"\n"
-"We found in Lecture 2 that Newton's Binomial Theorem gave the expansion\n"
-"\n"
-"$\n"
-"\\sqrt{1+x}\\approx\n"
-"1\n"
-"+\\frac{1}{2}x\n"
-"-\\frac{1}{8}x^2\n"
-"+\\frac{1}{16}x^3\n"
-"-\\frac{5 x^4}{128}+\\cdots\n"
-"$\n"
-"\n"
-"to fourth order.\n"
-"Work out the next term in the expansion. This will be a constant `c` with the property that the polynomial\n"
-"\n"
-"$\\left(1  +\\frac{1}{2}x\n"
-"-\\frac{1}{8}x^2\n"
-"+\\frac{1}{16}x^3\n"
-"-\\frac{5 x^4}{128} + c \\cdot x^5 \\right)^2 - (1 + x)$\n"
-"\n"
-"only has terms $x ^ 6$ or higher. (We don't *yet* have a way of saying that in Lean, so I have to give you the expansion explicitly.)"
-msgstr ""
-
 #: Game.Levels.L3Levels.L02_OneOverN
 msgid "As usual, compare to what's written in textbooks:\n"
 "\n"
@@ -3763,12 +3789,12 @@ msgid "`range N`\n"
 "Usage: `∑ k ∈ range N, k = N * (N + 1) / 2`."
 msgstr ""
 
-#: Game.Levels.L6Levels.L01_SplitAnds
-msgid "Split Ands"
-msgstr ""
-
 #: Game.Levels.L3Levels.L02_OneOverN
 msgid "We need to find `N`. Use the Archimedean Property: there exists `N` such that `1 / ε < N`. Try: `have f1 : ∃ (N : ℕ), 1 / ε < N := by apply ArchProp hε`"
+msgstr ""
+
+#: Game.Levels.L6Levels.L01_SplitAnds
+msgid "Split Ands"
 msgstr ""
 
 #: Game.Levels.L12Levels.L01_MonotoneBdd
@@ -3887,6 +3913,10 @@ msgstr ""
 msgid "The `choose` tactic extracts a witness from an existence statement in a hypothesis."
 msgstr ""
 
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "Problem 7"
+msgstr ""
+
 #: Game.Levels.L10Levels.L08_Mono
 msgid "# Level 3: Subsequence Theorem\n"
 "\n"
@@ -3973,6 +4003,10 @@ msgstr ""
 msgid "The `push_neg` tactic pushes negations through universal and existential quantifiers, inequalities, etc."
 msgstr ""
 
+#: Game.Levels.L12Pset.L12Pset1
+msgid "If `a` satisfies `IsCauchy`, then `-a` does too."
+msgstr ""
+
 #: Game.Levels.L12Levels.L02_IterateGap
 msgid "# Level 4: Iterated Gaps\n"
 "\n"
@@ -4014,10 +4048,6 @@ msgid "# Level 4: Iterated Gaps\n"
 "Then use monotonicity and the `succ_iterate` theorem to connect this to the growth from `σ^[k] 0` to `σ^[k+1] 0`."
 msgstr ""
 
-#: Game.Levels.L12Pset.L12Pset1
-msgid "If `a` satisfies `IsCauchy`, then `-a` does too."
-msgstr ""
-
 #: Game.Levels.L19Lecture
 msgid "# Lecture 19: Rearrangements"
 msgstr ""
@@ -4031,6 +4061,7 @@ msgid "Computing a Derivative"
 msgstr ""
 
 #: Game.Levels.L1Pset.L1Pset1
+#: Game.Levels.L1ExtraPset.L1ExtraPset
 #: Game.Levels.L8Pset.L8Pset1
 msgid "# Problem 1"
 msgstr ""
@@ -4173,6 +4204,12 @@ msgstr ""
 msgid "Prove `ConstTimesLimAt`"
 msgstr ""
 
+#: Game.Levels.L2NewtonsCalculationOfPi.L01_SeqConvDef
+msgid "For any sequence `a : ℕ → ℝ` and constant `L : ℝ`, and\n"
+"hypothesis `h : ∀ n, a n = L`, the theorem `ConstLim`\n"
+"proves that `SeqLim a L`, that is, the (constant) sequence `a` converges to `L`."
+msgstr ""
+
 #: Game.Levels.L1Pset.L1Pset5
 msgid "# Problem 5\n"
 "\n"
@@ -4190,12 +4227,6 @@ msgid "# Problem 5\n"
 "that is, the backslash, then the word `left`, and then a space.\n"
 "\n"
 "You may (or may not) find that useful in this problem."
-msgstr ""
-
-#: Game.Levels.L2NewtonsCalculationOfPi.L01_SeqConvDef
-msgid "For any sequence `a : ℕ → ℝ` and constant `L : ℝ`, and\n"
-"hypothesis `h : ∀ n, a n = L`, the theorem `ConstLim`\n"
-"proves that `SeqLim a L`, that is, the (constant) sequence `a` converges to `L`."
 msgstr ""
 
 #: Game.Levels.L6Levels.L04_Cases'
@@ -4299,6 +4330,10 @@ msgstr ""
 msgid "Pset 11"
 msgstr ""
 
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "# Problem 3"
+msgstr ""
+
 #: Game.Levels.L2NewtonsCalculationOfPi.L01_SeqConvDef
 msgid "The Convergence of a Sequence"
 msgstr ""
@@ -4353,14 +4388,6 @@ msgstr ""
 
 #: Game.Levels.L22Levels.L03
 msgid "Range cardinality: `card (range n) = n`."
-msgstr ""
-
-#: Game.Levels.L3Levels.L02_OneOverN
-msgid "Cast the inequality `n ≥ N` to reals, so that `linarith` can see and access it: `have N_le_n : (N : ℝ) ≤ n := by exact_mod_cast n_ge_N`"
-msgstr ""
-
-#: Game.Levels.L10Levels.L06_Prod
-msgid "Big Boss : Product of Sequences"
 msgstr ""
 
 #: Game.Levels.L13Levels.L03_MonotoneSubseq
@@ -4436,6 +4463,14 @@ msgid "# 🎉 Congratulations!\n"
 "**Ready for the homework? Time to make those peaks tumble down!**"
 msgstr ""
 
+#: Game.Levels.L3Levels.L02_OneOverN
+msgid "Cast the inequality `n ≥ N` to reals, so that `linarith` can see and access it: `have N_le_n : (N : ℝ) ≤ n := by exact_mod_cast n_ge_N`"
+msgstr ""
+
+#: Game.Levels.L10Levels.L06_Prod
+msgid "Big Boss : Product of Sequences"
+msgstr ""
+
 #: Game.Levels.L20Levels.L04
 msgid "If a function `f` has limit `L` at point `c`, then for every sequence `(xₙ)` converging to `c` with `xₙ ≠ c`, the sequence `f(xₙ)` converges to `L`."
 msgstr ""
@@ -4477,13 +4512,13 @@ msgstr ""
 msgid "Uniform Convergence Implies Integrability"
 msgstr ""
 
+#: Game.Levels.L1RealAnalysisStory.L02_rfl
+msgid "Every mathematical expression equals itself."
+msgstr ""
+
 #: Game.Levels.L6Levels.L01_SplitAnds
 msgid "The `split_ands` tactic breaks apart \\\"and\\\" Goals into individual pieces. If your goal is `h₁ ∧ h₂ ∧ h₃`, then calling `split_ands` will break that into three separate goals, the first being\n"
 "`h₁`, the second `h₂`, and of course `h₃`."
-msgstr ""
-
-#: Game.Levels.L1RealAnalysisStory.L02_rfl
-msgid "Every mathematical expression equals itself."
 msgstr ""
 
 #: Game.Levels.L17Levels.L01
@@ -4554,6 +4589,19 @@ msgstr ""
 
 #: Game.Levels.L16Pset.L16Pset1
 msgid "# Problem 1: Finite geometric series"
+msgstr ""
+
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "# Number Theory: Even Numbers\n"
+"\n"
+"In real mathematics, we define an integer $n$ to be **even** if there exists some integer $k$ such that $n = 2k$.\n"
+"\n"
+"**Theorem:** The sum of two even integers is even.\n"
+"\n"
+"**Proof Strategy:**\n"
+"1. `choose` the witnesses for $a$ and $b$ (unpack the definition of even).\n"
+"2. `use` the sum of those witnesses to prove $a+b$ is even.\n"
+"3. `ring_nf` to show the algebra works."
 msgstr ""
 
 #: Game.Levels.L16Levels.L01_check
@@ -4646,6 +4694,10 @@ msgstr ""
 msgid "Prove `BddSeriesOdd`"
 msgstr ""
 
+#: Game.Levels.L13PsetIntro
+msgid "Pset 13"
+msgstr ""
+
 #: Game.Levels.L2Pset.L2Pset2
 msgid "# Problem 2\n"
 "\n"
@@ -4657,10 +4709,6 @@ msgid "# Problem 2\n"
 "\n"
 "Hint: when you have multiple existential quantifiers, you can just write a single `use`\n"
 "and separate the answers by a comma, like so: `use 6, 7, 42` (in place of: `use 6`, then `use 7`, then `use 42`)."
-msgstr ""
-
-#: Game.Levels.L13PsetIntro
-msgid "Pset 13"
 msgstr ""
 
 #: Game.Levels.L15Lecture
@@ -5321,6 +5369,10 @@ msgstr ""
 msgid "If a sequence `a : ℕ → X` (where `X` could be `ℚ` or `ℝ`) is bounded, then it has a subsequence which is Cauchy."
 msgstr ""
 
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "Product of Odds"
+msgstr ""
+
 #: Game.Levels.L17Levels.L04
 msgid "If a sequence `a : ℕ → ℝ` is Cauchy, then it converges."
 msgstr ""
@@ -5435,12 +5487,12 @@ msgid "# Conclusion: The Reals Are Complete\n"
 "**Welcome to the real numbers. They're complete, they're beautiful, and they're ready for analysis.**"
 msgstr ""
 
-#: Game.Levels.L3Levels.L01_ArchProp
-msgid "Given `ε` and the fact that `0 < ε`, the theorem `ArchProp` claims the existence of `N : ℕ` so that `1 / ε < N`. This is a formalization of the classical Archimedean Property."
-msgstr ""
-
 #: Game.Levels.L13Pset.L13Pset1
 msgid "If `a (n+1) ≤ a n` holds for all `n`, then `a` is `Antitone`."
+msgstr ""
+
+#: Game.Levels.L3Levels.L01_ArchProp
+msgid "Given `ε` and the fact that `0 < ε`, the theorem `ArchProp` claims the existence of `N : ℕ` so that `1 / ε < N`. This is a formalization of the classical Archimedean Property."
 msgstr ""
 
 #: Game.Levels.L12Lecture
@@ -5763,12 +5815,12 @@ msgstr ""
 msgid "Try starting with `change ∀ ε > 0, ∃ N : ℕ, ∀ n ≥ N, |a n - L| < ε`"
 msgstr ""
 
-#: Game.Levels.L5Levels.L01_DoubleSeqConv
-msgid "And finally, this is where the powerful `linarith` tactic can take over. Remember to feed it (in brackets) the hypothesis (or hypotheses, separated by commas) which you want to manipulate to turn into the Goal."
-msgstr ""
-
 #: Game.Levels.L13Levels.L03_MonotoneSubseq
 msgid "If a sequence `a : ℕ → X` (where `X` could be `ℚ` or `ℝ`) does not have unbounded peaks, then it has a `Monotone` subsequence."
+msgstr ""
+
+#: Game.Levels.L5Levels.L01_DoubleSeqConv
+msgid "And finally, this is where the powerful `linarith` tactic can take over. Remember to feed it (in brackets) the hypothesis (or hypotheses, separated by commas) which you want to manipulate to turn into the Goal."
 msgstr ""
 
 #: Game.Levels.L23Levels.L01
@@ -5935,6 +5987,10 @@ msgid "Excellent work! You've proven that limits respect inequalities.\n"
 "This theorem lets us compare sequences and transfer information about one sequence to another via inequalities. Very powerful!"
 msgstr ""
 
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "# Problem 4"
+msgstr ""
+
 #: Game.Levels.L5Levels.L01_DoubleSeqConv
 msgid "Prove that constant multiples of convergent sequences converge to the constant multiple of the limit.\n"
 "This is the Machinist's response to scaling demands: 'If you want double the output with the same tolerance, I need half the tolerance on the original process!'"
@@ -6092,6 +6148,10 @@ msgstr ""
 
 #: Game.Levels.L1RealAnalysisStory.L08_choose
 msgid "If there exists a point where f equals 2, then there exists a point where f² equals 4."
+msgstr ""
+
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "# Problem 2"
 msgstr ""
 
 #: Game.Levels.L9Levels.L05_BddOfConv
@@ -6416,6 +6476,10 @@ msgstr ""
 
 #: Game.Levels.L24Levels.L03
 msgid "Every nonempty set of real numbers that is bounded above has a least upper bound."
+msgstr ""
+
+#: Game.Levels.L1RealAnalysisStory.L03_rw
+msgid "The `rw` tactic replaces the left-hand side of an equality with the right-hand side in the goal. The syntax is `rw [hypothesis_name1, hypothesis_name2, etc]`."
 msgstr ""
 
 #: Game.Levels.L7Levels.L03_SeqInvLim
@@ -7088,6 +7152,7 @@ msgid "# Level 1: Lipschitz implies Uniformly Continuous\n"
 msgstr ""
 
 #: Game.Levels.L1Pset.L1Pset4
+#: Game.Levels.L1ExtraPset.L1ExtraPset
 #: Game.Levels.L3Pset.L3Pset4
 #: Game.Levels.L6Pset.L6Pset4
 #: Game.Levels.L8Pset.L8Pset4
@@ -7328,6 +7393,10 @@ msgstr ""
 #: Game.Levels.L1Pset.L1Pset3
 #: Game.Levels.L1Pset.L1Pset4
 #: Game.Levels.L1Pset.L1Pset5
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+#: Game.Levels.L1ExtraPset.L1ExtraPset
 #: Game.Levels.L2Pset.L2Pset1
 #: Game.Levels.L2Pset.L2Pset2
 #: Game.Levels.L3Pset.L3Pset1
@@ -7434,6 +7503,10 @@ msgstr ""
 
 #: Game.Levels.L12Levels.L02_IterateGap
 msgid "Iterated Gaps"
+msgstr ""
+
+#: Game.Levels.L1ExtraPsetIntro
+msgid "# Extra Problem Set 1"
 msgstr ""
 
 #: Game.Levels.L1RealAnalysisStory.L07_specialize
@@ -7545,6 +7618,10 @@ msgid "*Real Analysis, The Game*\n"
 "* **Many thanks to:** Jon Eugster, Heather Macbeth, Michael Stoll, and the students of 311H for a lot of technical support, encouragement, and many great suggestions for improvement!"
 msgstr ""
 
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "Nice. If you did this by hand, you'd have to expand `(2k+1)(2j+1)` manually. Lean does the heavy lifting!"
+msgstr ""
+
 #: Game.Levels.L21Levels.L05
 msgid "# Level 1: Sequential Criterion for Limits (Backward Direction)\n"
 "\n"
@@ -7611,6 +7688,10 @@ msgstr ""
 msgid "Const Times Limit"
 msgstr ""
 
+#: Game.Levels.L12Pset.L12Pset1
+msgid "If `a` is `Antitone`, then `-a` is `Monotone`."
+msgstr ""
+
 #: Game.Levels.L4Pset.L4Pset1
 msgid "# Problem 1\n"
 "\n"
@@ -7626,10 +7707,6 @@ msgid "# Problem 1\n"
 "`have h' : |X - Y| = |Z| := by rewrite [h]; ring_nf`.\n"
 "\n"
 "This might come in handy!..."
-msgstr ""
-
-#: Game.Levels.L12Pset.L12Pset1
-msgid "If `a` is `Antitone`, then `-a` is `Monotone`."
 msgstr ""
 
 #: Game.Levels.L17Levels.L01
@@ -7727,6 +7804,16 @@ msgid "# Level 6: AbsLe - Working with Absolute Values in Convergence\n"
 "**`abs_lt`**: This theorem states that `|x| < y` if and only if `-y < x ∧ x < y`. This allows you to convert between absolute value inequalities and conjunction of regular inequalities, making them easier to work with in proofs."
 msgstr ""
 
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "# Number Theory: Odd Numbers\n"
+"\n"
+"An integer $n$ is **odd** if there exists some integer $k$ such that $n = 2k + 1$.\n"
+"\n"
+"**Theorem:** The product of two odd integers is odd.\n"
+"\n"
+"This is slightly harder algebra, but `ring_nf` will handle it for you. Focus on the logic: unpack the hypotheses, find the new witness, and solve."
+msgstr ""
+
 #: Game.Levels.L12Levels.L01_MonotoneBdd
 msgid "If a sequence `a : ℕ → X` (where `X` could be `ℚ` or `ℝ`) is `Monotone` and grows along some subsequences by `ε`, then it eventually grows by `k * ε` for any `k`."
 msgstr ""
@@ -7770,6 +7857,15 @@ msgid "# Problem 1\n"
 "\n"
 "Suppose that a sequence `a : ℕ → ℝ` converges to `L ≠ 0`. Show that eventually `|a n|` is at most\n"
 "`2|L|`."
+msgstr ""
+
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "# Complex Existence\n"
+"\n"
+"We are now working with the Complex Numbers, denoted by `ℂ`.\n"
+"The imaginary unit is written as `Complex.I`.\n"
+"\n"
+"Proving things in `ℂ` works exactly the same as in `ℝ`. `ring_nf` is smart enough to know how to handle `Complex.I`."
 msgstr ""
 
 #: Game.Levels.L1RealAnalysisStory.L02_rfl
@@ -8582,6 +8678,7 @@ msgid "If `Series (fun n ↦ |a n|)` converges, then `Series a` converges."
 msgstr ""
 
 #: Game.Levels.L1Pset.L1Pset3
+#: Game.Levels.L1ExtraPset.L1ExtraPset
 #: Game.Levels.L3Pset.L3Pset3
 #: Game.Levels.L6Pset.L6Pset3
 #: Game.Levels.L7Pset.L7Pset3
@@ -9549,6 +9646,10 @@ msgstr ""
 msgid "Pset 7"
 msgstr ""
 
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "Given `f(x) = x + 5` and `g(x) = 3 * x`, prove that there exists an `a` equal to `f(g(2))`."
+msgstr ""
+
 #: Game.Levels.L10Levels.L06_Prod
 msgid "Congratulations! You've completed the hardest part of the Algebraic Limit Theorem.\n"
 "\n"
@@ -9634,6 +9735,10 @@ msgstr ""
 
 #: Game.Levels.L10Pset.L10Pset4
 msgid "If a sequence `a` converges to `L` and `K < a n` for all `n`, then `K ≤ L`."
+msgstr ""
+
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "Let $a$ and $b$ be integers. If $a$ is odd and $b$ is odd, then $a \\cdot b$ is odd."
 msgstr ""
 
 #: Game.Levels.L22Levels.L02
@@ -10056,7 +10161,12 @@ msgid "# Problem Set 12\n"
 "Good luck!"
 msgstr ""
 
+#: Game.Levels.L1ExtraPsetIntro
+msgid "Extra Pset 1"
+msgstr ""
+
 #: Game.Levels.L1Pset.L1Pset1
+#: Game.Levels.L1ExtraPset.L1ExtraPset
 #: Game.Levels.L2Pset.L2Pset1
 #: Game.Levels.L3Pset.L3Pset1
 #: Game.Levels.L4Pset.L4Pset1
@@ -10396,6 +10506,10 @@ msgid "# Congratulations!\n"
 "The distinction between absolute and conditional convergence is one of the most important concepts in real analysis."
 msgstr ""
 
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "Given that `f(z) = z + Complex.I` for all `z`, prove that there exists a `w` such that `f(w) = 3 * Complex.I`."
+msgstr ""
+
 #: Game.Levels.L18Pset.L04
 msgid "Prove `CoherenceOfReals`"
 msgstr ""
@@ -10459,6 +10573,10 @@ msgid "# More on sequences\n"
 "- (iv) `lim (a / b) = L / M`, as long as `M ≠ 0`.\n"
 "\n"
 "Let's get started."
+msgstr ""
+
+#: Game.Levels.L1ExtraPset.L1ExtraPset
+msgid "Q.E.D. (Quod Erat Demonstrandum). You have proven a standard number theory result!"
 msgstr ""
 
 #: Game.Levels.L20PsetIntro
